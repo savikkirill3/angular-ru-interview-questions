@@ -67,20 +67,31 @@
 <details>
 <summary>Знаете ли вы как браузер обрабатывает index.html (расскажите про Critical Rendering Path)?</summary>
 <div>
-  Существует 6 этапов CRP:
-    построение DOM-дерева,
-    построение CSSOM-дерева,
-    запуск JavaScript,
-    создание Render-дерева,
-    генерация раскладки(layout), это то, что определяет размер видимой области документа
-    отрисовка
+  <b>Существует 6 этапов CRP:</b>
+  <ul>
+    <li>построение DOM-дерева</li>
+    <li>построение CSSOM-дерева</li>
+    <li>запуск JavaScript</li>
+    <li>создание Render-дерева</li>
+    <li>генерация раскладки(layout), это то, что определяет размер видимой области документа</li>
+    <li>отрисовка</li>
+  </ul>
 </div>
 </details>
 
 <details>
 <summary>Какие типы данных есть в JavaScript?</summary>
 <div>
-  string, number, symbol, null, undefined, object, bigint, boolean
+  <ul>
+    <li>string</li>
+    <li>number</li>
+    <li>symbol</li>
+    <li>null</li>
+    <li>undefined</li>
+    <li>object</li>
+    <li>bigint</li>
+    <li>boolean</li>
+  </ul>
   symbol представляет собой уникальный идентификатор. Создаются новые символы с помощью функции Symbol()
   BigInt позволяет предотвратить ошибки переполнения при математических операциях
 </div>
@@ -136,6 +147,7 @@
 <summary>Что такое Promise и для чего используется в JS?</summary>
 <div>
   объект который содержит в себе действие ожидания и результат действия resolve(«выполнено успешно») или rejected («выполнено с ошибкой»)
+  .then(), .catch(), .finnaly(), так же есть Promise.all([...]).then() -- ожидает выполнения всех промисов в массиве и заходит в then, Promise.race([...]).then() -- заходит в then после выполнения 1 промиса из массива
 </div>
 </details>
 
