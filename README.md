@@ -29,6 +29,13 @@
 </details>
 
 <details>
+<summary>Что такое localStorage, sessionStorage, Cookies?</summary>
+<div>
+![image](https://user-images.githubusercontent.com/39432789/182696781-09a7b2de-3bbc-4e90-8614-aef313744e08.png)
+</div>
+</details>
+
+<details>
 <summary>Какие популярные CSS, JS библиотеки вы знаете?</summary>
 <div>
   Bootstrap, Pure CSS, …
