@@ -1917,16 +1917,19 @@ Change Detection Mechanism - продвигается только вперед 
 <br>Например, вы не хотите внедрять сервис AuthService в сервис UserService, который необходим, чтобы записать в данные пользователя дату и время последней авторизации. В такой ситуации идеально подойдет factory provider.
 
 <br><i>user.service.ts</i>
+```ts                                                                                    
 constructor(private lastAuth: Date){
   this.user.lastAuth = lastAuth;
 }
-                                                                                    
+```                                                                                    
 <br><i>user-factory.service.ts</i>
+```ts                                                                                    
 let userServiceFactory = (auth: AuthService) => {
   return new UserService(auth.lastAuthDate)
 }
-                                                                                    
+```                                                                                    
 <br><i>app.module.ts</i>
+ ```ts                                                                                   
 providers: [
   {
     provide: UserService,
@@ -1934,7 +1937,7 @@ providers: [
     deps: [AuthService],
   },
 ]
-                                                                                    
+```                                                                                    
 <br>В deps перечисляются все зависимости, необходимые для создания factory provider.                                                                                   
 </div>
 </details>
