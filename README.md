@@ -1898,10 +1898,14 @@ Change Detection Mechanism - продвигается только вперед 
 <br>Когда компоненту требуется сервис, то его поиск начинается с самого нижнего injector-а и далее вверх по иерархии, то есть сначала проверяется уровень самого компонента.
 
 <br>Если сервис был найден на одном из нижних уровней, то дальнейший поиск не осуществляется. Если же поиск вообще не даст никаких результатов, то будет сгенерирована ошибка.
+                                                                                    
 <br>Декораторы @SkipSelf() и @Optional()
-   <br>Таким образом, если указать два одинаковых сервиса в одном компоненте, но перед одним из них поставить @SkipSelf(), то удастся получить доступ к локальному и глобальному экземплярам одновременно.
-    <br>Назначение декоратора @Optional() весьма простое. В случае отсутствия необходимого сервиса во всех Angular injector не будет сгенерировано исключение, а в переменную, которая должна была стать экземпляром, просто запишется null.
-  <br>Возможные свойства объекта конфигурации:
+                                                                                    
+<br>Таким образом, если указать два одинаковых сервиса в одном компоненте, но перед одним из них поставить @SkipSelf(), то удастся получить доступ к локальному и глобальному экземплярам одновременно.
+                                                                                    
+<br>Назначение декоратора @Optional() весьма простое. В случае отсутствия необходимого сервиса во всех Angular injector не будет сгенерировано исключение, а в переменную, которая должна была стать экземпляром, просто запишется null.
+
+<br>Возможные свойства объекта конфигурации:
 
 <ul>
     <li>useClass</li>                                                                   
@@ -1909,21 +1913,28 @@ Change Detection Mechanism - продвигается только вперед 
     <li>useValue</li>                                                                     
     <li>useFactory и deps</li>
 </ul> 
+                                                                                    
 <br>Например, вы не хотите внедрять сервис AuthService в сервис UserService, который необходим, чтобы записать в данные пользователя дату и время последней авторизации. В такой ситуации идеально подойдет factory provider.
 
-<br>user.service.ts
-
-<br>constructor(private lastAuth: Date){this.user.lastAuth = lastAuth;}
-<br>user-factory.service.ts
-<br>let userServiceFactory = (auth: AuthService) => {return new UserService(auth.lastAuthDate)<br>}
-<br>app.module.ts
-<br>providers: [
+<br><i>user.service.ts</i>
+constructor(private lastAuth: Date){
+  this.user.lastAuth = lastAuth;
+}
+                                                                                    
+<br><i>user-factory.service.ts</i>
+let userServiceFactory = (auth: AuthService) => {
+  return new UserService(auth.lastAuthDate)
+}
+                                                                                    
+<br><i>app.module.ts</i>
+providers: [
   {
     provide: UserService,
     useFactory: userServiceFactory,
     deps: [AuthService],
   },
 ]
+                                                                                    
 <br>В deps перечисляются все зависимости, необходимые для создания factory provider.                                                                                   
 </div>
 </details>
