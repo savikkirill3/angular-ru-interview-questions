@@ -199,6 +199,7 @@ var square = new Square(2);
 <div>
 <br><b>CallStack</b> – это структура данных, в которую попадают все вызовы функций которые мы вызываем. После выполнения они выбрасываются из стека. 
 ![image](https://miro.medium.com/max/1400/1*4alYhzR9Lvd60TLoqNmYMQ.gif)
+![image](https://miro.medium.com/max/1400/1*bra0q82UKT7BKxir5eu7eg.gif)
 
 <br><b>Task Queue</b> — это очередь из сообщений различных API предоставленных окружением будь то node.js или браузер. Эти сообщения нужны для того, чтобы навешать на них функции обратного вызова после того, как CallStack будет обработан.
 ![image](https://miro.medium.com/max/1400/1*bra0q82UKT7BKxir5eu7eg.gif)
