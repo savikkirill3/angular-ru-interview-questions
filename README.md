@@ -198,10 +198,10 @@ var square = new Square(2);
 <summary>Что такое call-stack, task-queue (приведите примеры работы)?</summary>
 <div>
 <br>CallStack – это структура данных, в которую попадают все вызовы функций которые мы вызываем. После выполнения они выбрасываются из стека. 
-<br>![image]([https://github.com/ZhengYaWei1992/ZWProgressView/blob/master/Untitled3.gif](https://miro.medium.com/max/1400/1*4alYhzR9Lvd60TLoqNmYMQ.gif))
+<br>![image](https://miro.medium.com/max/1400/1*4alYhzR9Lvd60TLoqNmYMQ.gif)
 
 <br>Task Queue — это очередь из сообщений различных API предоставленных окружением будь то node.js или браузер. Эти сообщения нужны для того, чтобы навешать на них функции обратного вызова после того, как CallStack будет обработан.
-<br>![image]([[https://github.com/ZhengYaWei1992/ZWProgressView/blob/master/Untitled3.gif](https://miro.medium.com/max/1400/1*4alYhzR9Lvd60TLoqNmYMQ.gif)](https://miro.medium.com/max/1400/1*bra0q82UKT7BKxir5eu7eg.gif))
+<br>![image](https://miro.medium.com/max/1400/1*bra0q82UKT7BKxir5eu7eg.gif)
 </div>
 </details>
 
