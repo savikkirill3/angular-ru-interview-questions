@@ -302,14 +302,36 @@ var square = new Square(2);
 <details>
 <summary>Что такое Union Type (тип объединения) и для чего используется?</summary>
 <div>
-  in progress..
+  <br><b>Union</b> — это эффективный способ выразить значение, которое может быть одного из нескольких типов. Два или больше типов данных можно комбинировать при помощи символа конвейеризации (|), обозначающего тип Union
 </div>
 </details>
 
 <details>
 <summary>Поддерживает ли TypeScript перегрузку методов?</summary>
 <div>
-  in progress..
+  Да поддерживает
+  
+  ```ts
+  function concatString(s1: string, s2?: string, s3?: string) {
+  let s = s1;
+  if(s2) {
+    s += `, ${s2}`;
+  }
+  if(s3) {
+    s += `, ${s3}`;
+  }
+  return s;
+}
+
+// ❎  теперь это сработает 
+concatString('one');
+concatString('one','two');
+concatString('one', 'two', 'three');
+
+// ❌ мы получим ошибки компиляции, если попытаемся сделать 
+concatString('one', true);
+concatString('one', 'two', 'three', 'four');
+  ```
 </div>
 </details>
 
