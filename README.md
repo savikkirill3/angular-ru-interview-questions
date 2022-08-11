@@ -244,6 +244,7 @@ var square = new Square(2);
   
   <br>
   можете создавать <b>псевдонимы</b> типов, например, так:
+  
   ```ts
       type RepositoryOwner = string;
       type PullRequestNumber = string | number;
