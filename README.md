@@ -305,7 +305,7 @@ var square = new Square(2);
     type CurrencySign = '₽' | '€' | '£';
     const currencySigns: ReadonlyArray<CurrencySign> = ['₽', '€', '£'];
   ```
-      <br>ObjectKey — это дженерик-тип (обобщенный тип), который перечисляет ключи объекта Obj, переданного в него как в параметр.
+  <br>ObjectKey — это дженерик-тип (обобщенный тип), который перечисляет ключи объекта Obj, переданного в него как в параметр.
   ```ts
     type PaymentKeys = ObjectKey<Payment>; //  'amount' | 'currency' | 'currencySign'
   ```
@@ -315,16 +315,12 @@ var square = new Square(2);
       amount: number;
       currency: T; // «настраиваем» тип поля currency
     }
-
     const paymentInfo: PaymentInfo<string> = // …
   ```
   
   ```ts
     type PaymentInfo<T = string> = { … } // T — по умолчанию тип string
     const paymentInfo: PaymentInfo = // … тип переменной — PaymentInfo<string>
-  ```
-  ```ts
-  
   ```
   ```ts
     const identity = (val: T): T => { return val; }
