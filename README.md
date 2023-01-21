@@ -678,6 +678,8 @@ emp.greet("world");
 <details>
 <summary>Что такое MVVM и в чем разница перед MVC?</summary>
 <div>
+  ![image](https://user-images.githubusercontent.com/39432789/183654729-ef843738-a9d6-420e-952c-10b3df13ed3a.png)
+
   <br> <b>MVVM</b> - шаблон проектирования архитектуры приложения. Состоит из 3 ключевых блоков: Model, View, ViewModel.
   <br>Отличие от MVС заключаются в: <br> <br>
   
@@ -696,9 +698,7 @@ emp.greet("world");
       <li>
     <b>Controller</b> обрабатывает действия пользователя и затем обновляет Model или View. Если пользователь взаимодействует с приложением (нажимает кнопки на клавиатуре, передвигает курсор мыши), контроллер получает уведомление об этих действиях и решает, что с ними делать.</li>
     </ul>
-  
-  ![image](https://user-images.githubusercontent.com/39432789/183654729-ef843738-a9d6-420e-952c-10b3df13ed3a.png)
-  
+    
   <br>А так же есть <b>Model-View-Presenter</b> и <b>Presentation Model</b>
 
 </div>
