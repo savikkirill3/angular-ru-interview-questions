@@ -678,6 +678,7 @@ emp.greet("world");
 <details>
 <summary>Что такое MVVM и в чем разница перед MVC?</summary>
 <div>
+  
   ![image](https://user-images.githubusercontent.com/39432789/183654729-ef843738-a9d6-420e-952c-10b3df13ed3a.png)
 
   <br> <b>MVVM</b> - шаблон проектирования архитектуры приложения. Состоит из 3 ключевых блоков: Model, View, ViewModel.
