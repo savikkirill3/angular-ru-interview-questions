@@ -6,7 +6,7 @@
 
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
 - [Awesome Interviews](https://github.com/alex/what-happens-when)
-- [Angular Interview Questions](https://github.com/sudheerj/angular-interview-questions)
+- [Angular Interview Questions](https://github.com/sudheerj/angular-interview-questionsВ чём разница между Observable и Promise
 
 **Frontend**:
 
@@ -2337,10 +2337,11 @@ export class UsersComponent implements OnInit {
 <details>
 <summary>В чем разница между Routing и Navigation?</summary>
 <div>
-  <br>Routing и Navigation являются связанными концепциями в Angular, но они отвечают за разные аспекты навигации в приложении.
-  <br>Routing отвечает за сопоставление URL адресов с компонентами и передачу параметров маршрута в компоненты. Это позволяет пользователю навигировать по приложению,    используя браузерную историю и кнопку "назад".
-  <br>Navigation же отвечает за сам процесс перехода между компонентами и передачу данных между ними. Навигация может быть инициирована как программно, так и пользователем, например, при нажатии на ссылку или кнопку.
-  <br>В общем, Routing отвечает за сопоставление URL и компонентов, а Navigation отвечает за сам процесс перехода между компонентами.
+  <br>
+<p>Routing и Navigation являются связанными концепциями в Angular, но они отвечают за разные аспекты навигации в приложении.</p>
+  <p>Routing отвечает за сопоставление URL адресов с компонентами и передачу параметров маршрута в компоненты. Это позволяет пользователю навигировать по приложению,    используя браузерную историю и кнопку "назад".</p>
+  <p>Navigation же отвечает за сам процесс перехода между компонентами и передачу данных между ними. Навигация может быть инициирована как программно, так и пользователем, например, при нажатии на ссылку или кнопку.</p>
+  <p>В общем, Routing отвечает за сопоставление URL и компонентов, а Navigation отвечает за сам процесс перехода между компонентами.</p>
 </div>
 </details>
 
